@@ -1,0 +1,481 @@
+/* ОБЩИЕ СТИЛИ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", serif;
+  background-color: #f9f9f9;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 50px;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  font-weight: normal;
+  color: #000000;
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+header .contact-btn {
+  background-color: #ff6c17;
+  color: #fff;
+  border: none;
+  padding: 13px 16px;
+  border-radius: 12px;
+}
+
+/* MAIN */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.btnprimary {
+  background-color: #ff6c17;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.btnsecondary {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.hero img {
+  max-width: 345px;
+}
+
+.intro {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  padding: 10px 10px;
+  display: grid;
+  max-width: 553px;
+  justify-items: center;
+}
+
+.hero .intro h1 {
+  font-size: 32px;
+  margin-top: 24px;
+  font-weight: normal;
+}
+
+.hole {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.quote {
+  font-size: 20px;
+}
+
+.hero .intro .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.hero .intro .buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.hero .intro .buttons .orange {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+.hero .intro .buttons .black {
+  background-color: #333;
+  color: #fff;
+}
+
+/* ОБО МНЕ */
+.best {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  padding-top: 15px;
+  padding-bottom: 22px;
+  margin-top: 60px;
+  padding-right: 24px;
+  padding-left: 17px;
+}
+
+.best-text {
+  font-family: "Inter", serif;
+  font-size: 32px;
+  margin-left: 17px;
+}
+
+.price {
+  font-size: 24px;
+  color: #555555;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 50px auto;
+  justify-items: center;
+}
+
+@media (max-width: 1200px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product {
+  background-color: #d9d9d9;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 380px;
+  height: 439px;
+}
+
+.product-content {
+  font-family: "Inter", serif;
+  text-decoration: none;
+  align-items: center;
+  margin-left: 18px;
+  margin-right: 21px;
+}
+
+.knopka {
+  max-width: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20;
+}
+
+/* ОТЗЫВЫ */
+.container {
+  width: 1281px;
+  height: 670px;
+  padding: 33px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.title {
+  font-size: 24px;
+  color: black;
+  text-align: start;
+  margin-bottom: 33px;
+}
+
+.review-container {
+  display: grid;
+  grid-template-columns: repeat(3, 332px);
+  grid-gap: 55px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Блок отзыва */
+
+.wrapper {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.review-block {
+  width: 220px;
+  height: 220px;
+  background-color: #d9d9d9;
+  padding: 20px;
+  text-align: start;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  justify-items: center;
+}
+
+.review-logo {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 15px;
+}
+
+.review-block p {
+  font-size: 18px;
+  color: black;
+  margin: 0;
+}
+
+.review-logo-wrapper {
+  width: 56px;
+  height: 56px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.review-logo {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+}
+
+/* ПОСЛЕДНЯЯ СТРАНИЦА */
+.consultation {
+  padding: 40px;
+  background-color: #fff;
+  border: 2px solid color white;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.consultation h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.consultation-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.consultation .info {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.consultation .info a {
+  text-decoration: none;
+}
+
+.consultation-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.consultation-form input,
+.consultation-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+.consultation-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.submit-btn {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* МОИ РАБОТЫ */
+
+.portfolio {
+  padding-bottom: 46px;
+  padding-top: 19px;
+  padding-left: 30px;
+  padding-right: 45px;
+  background-color: #fff;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-top: 112px;
+}
+
+.portfolio h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.portfolio .links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.portfolio .links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.portfolio .links a:hover {
+  background-color: white;
+  color: #fff;
+}
+
+.hhh {
+  display: inline-flex;
+  justify-content: center;
+  padding: 25px 25px;
+}
+
+.platform {
+  display: flex;
+}
+
+/* АДАПТАЦИЯ */
+@media (max-width: 768px) {
+  /* Центрирование белого блока */
+  .container {
+    width: 90%; /* Белый блок занимает 90% ширины экрана */
+    padding: 20px;
+  }
+
+  .review-container {
+    grid-template-columns: 1fr; /* Один блок в ряд */
+    grid-gap: 20px; /* Уменьшение расстояния между блоками */
+  }
+
+  .review-block {
+    width: 100%; /* Блок занимает всю ширину */
+    height: auto; /* Автоматическая высота */
+    padding: 15px; /* Уменьшение внутреннего отступа */
+  }
+
+  .review-logo-wrapper {
+    width: 48px; /* Уменьшение размера кружка */
+    height: 48px;
+    margin-bottom: 10px;
+  }
+
+  .review-logo {
+    width: 24px; /* Уменьшение размера иконки */
+    height: 24px;
+  }
+
+  /* Последняя страница (форма) */
+  .consultation {
+    padding: 20px;
+    max-width: 100%; /* Убираем ограничение ширины */
+    margin: 20px auto;
+  }
+
+  .consultation-content {
+    flex-direction: column; /* Ставим элементы в колонку */
+    gap: 10px;
+  }
+
+  .consultation .info {
+    font-size: 14px; /* Уменьшаем размер текста */
+  }
+
+  .consultation-form input,
+  .consultation-form textarea {
+    padding: 8px; /* Уменьшение отступов */
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 8px 16px; /* Уменьшение размера кнопки */
+    font-size: 14px;
+  }
+
+  /* Мои работы */
+  .portfolio {
+    padding: 20px;
+  }
+
+  .portfolio .links {
+    flex-direction: column; /* Переводим ссылки в колонку */
+    gap: 10px;
+  }
+
+  .portfolio .links a {
+    padding: 8px;
+    font-size: 14px; /* Уменьшение текста */
+  }
+
+  /* Общие настройки */
+  .hhh {
+    padding: 15px;
+  }
+
+  .platform {
+    flex-direction: column; /* Переводим в колонку */
+  }
+}
